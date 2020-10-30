@@ -8,7 +8,8 @@ import { NotFoundComponent } from './layouts/not-found/not-found.component';
 const routes: Routes = [
   { path: 'home', component:HomeComponent },
   { path: 'cats', component:CatsComponent },
-  { path: 'cat-form', component:CatsFormComponent },
+  { path: 'cats-form', component:CatsFormComponent },
+  { path: 'cats-form/:id', component:CatsFormComponent },
   { path: 'not-found', component:NotFoundComponent },
   { path: '**', component:NotFoundComponent }
 ];

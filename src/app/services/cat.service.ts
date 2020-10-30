@@ -24,6 +24,10 @@ export class CatService {
     return this.http.post<Cat[]>(this.BASE_URL, cat)
   }
 
+  update(id:number, cat:Cat) : Observable<Cat[]> {
+    return this.http.put<Cat[]>(this.BASE_URL + `/${id}`, cat)
+  }
+
   delete(id:number) : Promise<any> {
     return fetch(this.BASE_URL + `/${id}`, {
       method: 'DELETE'

@@ -3,17 +3,17 @@
         <h3>Cat's profile:</h3>
         <mat-form-field class="catForm-full-width">
             <mat-label>Name</mat-label>
-            <input type="text" matInput formControlName="name">
+            <input type="text" matInput formControlName="name" [ngModel]="edit && catData ? catData.name : ''">
         </mat-form-field>
         <mat-form-field class="catForm-full-width">
             <mat-label>Age</mat-label>
-            <input type="number" matInput formControlName="age">
+            <input type="number" matInput formControlName="age" [ngModel]="edit && catData ? catData.age : ''">
         </mat-form-field>
         <mat-form-field class="catForm-full-width">
             <mat-label>Race</mat-label>
-            <input type="text" matInput formControlName="race">
+            <input type="text" matInput formControlName="race" [ngModel]="edit && catData ? catData.race : ''">
         </mat-form-field>
-        <mat-slide-toggle formControlName="alife">Alife</mat-slide-toggle>
+        <mat-slide-toggle formControlName="alife" [ngModel]="edit && catData ? catData.alife : ''" [checked]="edit && catData && catData.alife ? 'checked' : ''">Alife</mat-slide-toggle>
     </div>
     
     <br>

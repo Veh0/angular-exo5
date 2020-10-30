@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Felix",
-      "age": 14,
+      "age": 15,
       "race": "Bengal",
       "alife": false
     },
@@ -20,6 +20,20 @@
       "race": "Persan",
       "alife": true,
       "id": 3
+    },
+    {
+      "name": "Minouche",
+      "age": 1,
+      "race": "Siamois",
+      "alife": true,
+      "id": 4
+    },
+    {
+      "name": "Sheba",
+      "age": 18,
+      "race": "/",
+      "alife": "",
+      "id": 5
     }
   ]
 }
