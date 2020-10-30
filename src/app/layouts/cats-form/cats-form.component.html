@@ -1,1 +1,21 @@
-<p>cats-form works!</p>
+<form [formGroup]="catsForm" (ngSubmit)='onSubmit()' class="catForm-form">
+    <div>
+        <h3>Cat's profile:</h3>
+        <mat-form-field class="catForm-full-width">
+            <mat-label>Name</mat-label>
+            <input type="text" matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field class="catForm-full-width">
+            <mat-label>Age</mat-label>
+            <input type="number" matInput formControlName="age">
+        </mat-form-field>
+        <mat-form-field class="catForm-full-width">
+            <mat-label>Race</mat-label>
+            <input type="text" matInput formControlName="race">
+        </mat-form-field>
+        <mat-slide-toggle formControlName="alife">Alife</mat-slide-toggle>
+    </div>
+    
+    <br>
+    <button mat-flat-button color="accent">ADD</button>
+</form>

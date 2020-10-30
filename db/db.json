@@ -1,18 +1,25 @@
 {
-    "cats" : [
-        {
-            "id": 1,
-            "name": "Felix",
-            "age": 14,
-            "race": "Bengal",
-            "alife": false
-        },
-        {
-            "id": 2,
-            "name": "Beerus",
-            "age": 2,
-            "race": "Sphynx",
-            "alife": true
-        }
-    ]
+  "cats": [
+    {
+      "id": 1,
+      "name": "Felix",
+      "age": 14,
+      "race": "Bengal",
+      "alife": false
+    },
+    {
+      "id": 2,
+      "name": "Beerus",
+      "age": 2,
+      "race": "Sphynx",
+      "alife": true
+    },
+    {
+      "name": "Chaussette",
+      "age": 13,
+      "race": "Persan",
+      "alife": true,
+      "id": 3
+    }
+  ]
 }

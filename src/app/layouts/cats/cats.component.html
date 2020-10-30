@@ -1,1 +1,31 @@
-<p>cats works!</p>
+<table mat-table [dataSource]="cats" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let cat"> {{ cat.name }} </td>
+    </ng-container>
+    <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef> Age </th>
+        <td mat-cell *matCellDef="let cat"> {{ cat.age }} </td>
+    </ng-container>
+    <ng-container matColumnDef="race">
+        <th mat-header-cell *matHeaderCellDef> Race </th>
+        <td mat-cell *matCellDef="let cat"> {{ cat.race }} </td>
+    </ng-container>
+    <ng-container matColumnDef="alife">
+        <th mat-header-cell *matHeaderCellDef> Alife </th>
+        <td mat-cell *matCellDef="let cat"> {{ cat.alife }} </td>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let cat">
+            <button type="button" mat-icon-button color="accent">
+                <mat-icon>open_in_new</mat-icon>
+            </button>
+            <button type="button" mat-icon-button color="warn" (click)="delete(cat.id)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
